@@ -1,4 +1,4 @@
-# Glom segmentation from WSIs
+# Glomerulus segmentation from whole-slide images (WSIs)
 
 This repository belongs to the project of Lukas Göbl, Peer Schäfter and Lukas Scheib during the Computer Vision course 2025.
 
