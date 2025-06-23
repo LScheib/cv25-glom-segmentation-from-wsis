@@ -7,6 +7,7 @@ This repository belongs to the project of Lukas Göbl, Peer Schäfter and Lukas 
 - Q. H. Cap, "A General Pipeline for Glomerulus Whole-Slide Image Segmentation", 2025, doi: [10.48550/arXiv.2411.04782](https://doi.org/10.48550/arXiv.2411.04782). (Winning paper)
 - B. Cheng, I. Misra, A. G. Schwing, A. Kirillov and R. Girdhar, "Masked-attention Mask Transformer for Universal Image Segmentation," *2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, New Orleans, LA, USA, 2022, pp. 1280-1289, doi: [10.1109/CVPR52688.2022.00135](https://doi.org/10.1109/CVPR52688.2022.00135). (Model)
 - Z. Liu et al., "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows", *2021 IEEE/CVF International Conference on Computer Vision (ICCV)*, Montreal, QC, Canada, 2021, pp. 9992-10002, doi: [10.1109/ICCV48922.2021.00986](https://doi.org/10.1109/ICCV48922.2021.00986). (Swin)
+- Xiao, Tete, Yingcheng Liu, Bolei Zhou, Yuning Jiang, and Jian Sun. "Unified perceptual parsing for scene understanding." In Proceedings of the European conference on computer vision (ECCV), pp. 418-434. 2018.
 
 ## Dataset 
 - KPIs 2024 challenge dataset for task 2 (WSI level)
