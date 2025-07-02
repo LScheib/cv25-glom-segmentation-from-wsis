@@ -112,7 +112,32 @@
 
 %-------------------------------
 
-\begin{frame}{What is Broden+?}
+\begin{frame}{Why a new Dataset?}
+  \textbf{No single existing dataset} had all the annotations needed for unified perceptual parsing.
+  \vspace{0.4cm}
+
+  \textbf{Limitations of existing datasets:}
+  \begin{itemize}
+    \item Each focuses on \textbf{only one or two tasks} (e.g., objects OR textures)
+    \item Different label sets, formats, and definitions
+    \item No shared vocabulary across datasets (e.g. "car" in one dataset might be "vehicle" in another)
+  \end{itemize}
+  \vfill
+  \textit{Manual merging needed to create a unified dataset that supports all tasks.}
+\end{frame}
+
+\begin{frame}{How Was Broden+ Merged?}
+  
+  \textbf{Merging Criteria:}
+  \begin{itemize}
+    \item All annotations are \textbf{mapped to a shared vocabulary}
+    \item Images are labeled with \textbf{as many tasks as possible}
+    \item Only high-quality, pixel-aligned annotations are kept
+    \item Some rare classes were \textbf{merged into broader categories} to reduce noise and improve consistency (e.g "stone" and "concrete" are merged into "stone")
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What is Broden+}
   \begin{itemize}
     \item \textbf{Broden+} is a large-scale, unified dataset built by merging:
     \begin{itemize}
@@ -126,42 +151,8 @@
       \item Scene labels, object masks, parts, textures, materials
     \end{itemize}
   \end{itemize}
-  \vfill
-  \textit{Goal: Combine multiple visual concepts in a single dataset.}
 \end{frame}
 
-\begin{frame}{Why Was Broden+ Manually Merged?}
-  \textbf{No single existing dataset} had all the annotations needed for unified perceptual parsing.
-
-  \vspace{0.4cm}
-
-  \textbf{Limitations of existing datasets:}
-  \begin{itemize}
-    \item Each focuses on \textbf{only one or two tasks} (e.g., objects OR textures)
-    \item Different label sets, formats, and definitions
-    \item No shared vocabulary across datasets
-  \end{itemize}
-
-  \vspace{0.4cm}
-
-  \textbf{Manual merging needed to:}
-  \begin{itemize}
-    \item \textbf{Standardize labels and semantics} across tasks
-    \item Ensure \textbf{consistent pixel-level quality}
-    \item Enable multi-task supervision in a unified setting
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{How Was Broden+ Merged?}
-  
-  \textbf{Merging Criteria:}
-  \begin{itemize}
-    \item All annotations are \textbf{mapped to a shared vocabulary}
-    \item Images are labeled with \textbf{as many tasks as possible}
-    \item Only high-quality, pixel-aligned annotations are kept
-    \item Some rare classes were \textbf{merged into broader categories} to reduce noise and improve consistency (stone and concrete are merged into stone)
-  \end{itemize}
-\end{frame}
 
 \begin{frame}{Friedhof}
 
