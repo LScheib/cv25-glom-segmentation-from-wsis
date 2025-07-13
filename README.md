@@ -18,5 +18,5 @@ The dataset be downloaded from the [KPIs 2024 Challenge dataset](https://www.syn
 - `glomerulus-segmentation.yml`: Contains the configuration file for the project.
 - `VariableUNet.ipynb`: Contains the implementation of the VariableUNet architecture and training script.
 - `WSI_Patching.ipynb`: Contains the implementation of the WSI level patching logic to create datasets using custom patch_size and overlap. 
-- `Experiments1-5/` and `ExperimentPanNuke`: Contain the results of the different experiments as JSON files. We also included the most notable models for Experiment 4 and 5.
+- `Experiments1-5/` and `ExperimentPanNuke/`: Contain the results of the different experiments as JSON files. We also included the most notable models for Experiment 4 and 5.
 - `Journal Club/`: Contains our journal club presentation.
