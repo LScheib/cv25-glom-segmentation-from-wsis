@@ -13,7 +13,7 @@ The dataset used originates from PAS-stained whole-slide images (WSIs) of mouse 
 The dataset be downloaded from the [KPIs 2024 Challenge dataset](https://www.synapse.org/Synapse:syn54077668/wiki/626475) page.
 
 ## Files
-- `paper.pdf`: Contains the project report.
+- `Computer Vision, Project Report, Group 9, Göbl, Schäfer, Scheib.pdf`: Contains the project report.
 - `requirements.txt`: Contains the Python dependencies required to run the code.
 - `glomerulus-segmentation.yml`: Contains the configuration file for the project.
 - `VariableUNet.ipynb`: Contains the implementation of the VariableUNet architecture and training script.
