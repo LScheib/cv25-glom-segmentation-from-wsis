@@ -1,0 +1,8 @@
+ipykernel==6.29.5
+torchvision==0.20.1
+matplotlib==3.9.4
+pillow==11.2.1
+tqdm==4.67.1
+openslide-python==1.4.2
+openslide-bin==4.0.0.8
+tifffile==2025.3.30
