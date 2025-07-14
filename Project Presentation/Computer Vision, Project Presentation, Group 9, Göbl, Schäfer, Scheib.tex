@@ -90,7 +90,7 @@
     \begin{itemize}
         \item Trained on official KPIs dataset (train/val/test splits).
         \item Combined BCE and Dice loss (BCEDiceLoss) to address class imbalance. 
-        \item Hyperparameter tuning: BCE/Dice ratio, dice smooth, positive class weighting for BCE, base learning rate of Adam optimizer.
+        \item Hyperparameter tuning: BCE/Dice ratio, Dice smooth, positive class weighting for BCE, base learning rate of Adam optimizer.
         \item Experiments with different patch sizes ($256$, $2048$ px) and data subsets.
         \item Evaluated using accuracy, precision, recall, and $F_1$-score.
         \item Qualitative assessment via visual inspection.
@@ -98,13 +98,13 @@
 \end{frame}
 
 % Results
-\begin{frame}{Metrics of our best performing models}
+\begin{frame}{Metrics of our best performing Models}
     % After lot of testing _v2
     % Important: 256 patch size tested on 256 test set, 2048 patch size tested on 2048 test set.
-    % 256px preds should be scaled up befor testing
+    % 256px preds should be scaled up before testing
     \begin{table}[t]
         \centering
-        \begin{tabular}{c|c|ccccc}
+        \begin{tabular}{c|c|cccc}
             \toprule
             Patch size & Split & Accuracy & Precision & Recall & $F_1$-score \\
             \midrule
@@ -141,7 +141,7 @@
     \textbf{Possible next steps:}
     \begin{itemize}
         \item Implementation of a stitching pipeline to combine patch predictions into a full WSI mask.
-        \item Train VariableUNet with complete patching and stitching pipeline.
+        \item Train VariableUNet using the complete patching and stitching pipeline.
     \end{itemize}
 \end{frame}
 
@@ -159,14 +159,14 @@
     \textbf{Limitations:}
     \begin{itemize}
         \item Instability in training, especially with full-size patches.
-        \item Our configuarations, trained on small patches, did not generalize well to larger patches.
+        \item Our configurations, trained on small patches, did not generalize well to larger patches.
         \item No empirical validation on WSI segmentation due to time constraints.
     \end{itemize}
 \end{frame}
 
 % Discussion
 \begin{frame}{Discussion}
-    \textbf{In Retrospect:}
+    \textbf{In retrospect:}
     \begin{itemize}
         \item Greater emphasis on pre- and post-processing (downsampling patches and upsampling predictions).
         \item More in-depth data exploration regarding samples of different diseases.
@@ -174,11 +174,11 @@
 
     \vspace{0.5cm}
 
-    \textbf{Future Work:}
+    \textbf{Future work:}
     \begin{itemize}
         \item Exploring different model architectures and methods.
         \item Search for more robust hyperparameters and domain adaptation.
-        \item Exploring different WSI patching thresholds.
+        \item Continued work on WSI segmentation pipeline.
     \end{itemize}
 \end{frame}
 
