@@ -1,6 +1,6 @@
 # Glomerulus segmentation from whole-slide images (WSIs)
 
-This repository belongs to the project of Group 9 (Lukas Göbl, Peer Schäfter and Lukas Scheib) during the Computer Vision course 2025.
+This repository belongs to the project of group 9 (Lukas Göbl, Peer Schäfer and Lukas Scheib) during the computer vision course 2025.
 
 ## Introduction
 In our project we addressed the tasks of segmenting glomeruli from whole-slide and patch-level kidney biopsy images as part of the MICCAI 2024 Kidney Pathology Image segmentation (KPIs) Challenge on medical image segmentation. The core objective was to accurately identify glomerular structures, which is critical for diagnosing kidney diseases. Given the highly imbalanced nature of the data and the large image sizes, standard segmentation models tend to underperform.
