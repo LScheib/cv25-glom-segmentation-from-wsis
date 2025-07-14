@@ -10,13 +10,14 @@ In our work, we implemented and evaluated our VariableUNet architecture to prima
 ## Dataset 
 The dataset used originates from PAS-stained whole-slide images (WSIs) of mouse kidney tissue, collected from four well-established preclinical rodent models of chronic kidney disease (CKD). These models include Normal (Control), 5/6 Nephrectomy (5/6Nx), Diabetic Nephropathy (DN) and NEP25. It includes 8.866 image patches, split into a training, a validation and testing set. Each patch is sized 2048x2048 pixels and extracted from the WSIs.
 
-The dataset be downloaded from the [KPIs 2024 Challenge dataset](https://www.synapse.org/Synapse:syn54077668/wiki/626475) page.
+The dataset can be downloaded from the [KPIs 2024 Challenge dataset](https://www.synapse.org/Synapse:syn54077668/wiki/626475) page.
 
 ## Files
-- `Computer Vision, Project Report, Group 9, Göbl, Schäfer, Scheib.pdf`: Contains the project report.
 - `requirements.txt`: Contains the Python dependencies required to run the code.
 - `glomerulus-segmentation.yml`: Contains the configuration file for the project.
 - `VariableUNet.ipynb`: Contains the implementation of the VariableUNet architecture and training script.
 - `WSI_Patching.ipynb`: Contains the implementation of the WSI level patching logic to create datasets using custom patch_size and overlap. 
 - `Experiments1-5/` and `ExperimentPanNuke/`: Contain the results of the different experiments as JSON files. We also included the most notable models for Experiment 4 and 5.
+- `Project Report/`: Contains the project report as PDF and TeX files.
+- `Project Presentation/`: Contains the project presentation as PDF and TeX files.
 - `Journal Club/`: Contains our journal club presentation.
