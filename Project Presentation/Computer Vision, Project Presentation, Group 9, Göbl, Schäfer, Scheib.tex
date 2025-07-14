@@ -78,8 +78,8 @@
 \begin{frame}{VariableUNet Model}
     \begin{itemize}
         \item Standard UNet architecture with double convolution layers and skip connections.
-        \item Dilated convolution in the bottleneck (with dilations 1, 2 and 4 with $\frac{1}{3}$ of the channels each) for multi-scale feature extraction.\footnote{\href{https://doi.org/10.1117/1.JMI.8.6.067501}{Li et al. (2021)}}
-        \item Channel counts scale with variable patch size.
+        \item Dilated convolutions in the bottleneck (with dilation rates 1, 2, 4 on $\frac{1}{3}$ of the channels each) for multi-scale feature extraction.\footnote{\href{https://doi.org/10.1117/1.JMI.8.6.067501}{Li et al. (2021)}}
+        \item Channel quantities scale with variable patch size.
     \end{itemize}
     
         
@@ -89,9 +89,9 @@
 \begin{frame}{Experimental Design}
     \begin{itemize}
         \item Trained on official KPIs dataset (train/val/test splits).
-        \item Combined BCE and Dice loss (BCEDiceLoss) to address class imbalance. 
-        \item Hyperparameter tuning: BCE/Dice ratio, Dice smooth, positive class weighting for BCE, base learning rate of Adam optimizer.
-        \item Experiments with different patch sizes ($256$, $2048$ px) and data subsets.
+        \item Combined binary cross entropy (BCE) and Dice loss to address class imbalance. 
+        \item Hyperparameter tuning: BCE/Dice ratio, Dice smooth, positive class weighting for BCE, learning rate for Adam optimizer.
+        \item Experiments with different patch sizes ($256^2$ and $2048^2$ pixels) and data subsets.
         \item Evaluated using accuracy, precision, recall, and $F_1$-score.
         \item Qualitative assessment via visual inspection.
     \end{itemize}
@@ -185,19 +185,19 @@
 \appendix
 
 % Appendix
-\section{Appendix}
+\section{Backup}
 
 % Dilated bottleneck
-\begin{frame}{UNetArchitecture}
+\begin{frame}{UNet Architecture}
     \begin{figure}
         \centering
         \includegraphics[height=0.7\textheight]{Images/UNetArchitecture.png}
-        \caption{Doi: \href{https://doi.org/10.1117/1.JMI.8.6.067501}{10.1117/1.JMI.8.6.067501}}
+        \caption{Source: \href{https://doi.org/10.1117/1.JMI.8.6.067501}{Li et al. (2021)}, Figure 3 (edited)}
     \end{figure}
 \end{frame}
 
 % Double Convolution
-\begin{frame}[fragile]{Double Convolution}
+\begin{frame}[fragile]{Double Convolution in our Code Base}
     \begin{lstlisting}[language=Python]
 class DoubleConv(nn.Module):
     def __init__(self, in_channels, out_channels):
@@ -217,7 +217,7 @@ class DoubleConv(nn.Module):
 \end{frame}
 
 % Heat Map
-\begin{frame}{Heat Map F1 Score}
+\begin{frame}{$F_1$-Score Heat Map from Experiment 2}
     \begin{figure}
         \centering
         \includegraphics[height=0.7\textheight]{Images/12_heatmap_f1_score_by_weights.png}
@@ -225,7 +225,7 @@ class DoubleConv(nn.Module):
 \end{frame}
 
 % Heat Map
-\begin{frame}{Heat Map Recall}
+\begin{frame}{Recall Heat Map from Experiment 2}
     \begin{figure}
         \centering
         \includegraphics[height=0.7\textheight]{Images/12_heatmap_recall_by_weights.png}
@@ -233,7 +233,7 @@ class DoubleConv(nn.Module):
 \end{frame}
 
 % FlipFlop Graph
-\begin{frame}{FlipFlop Graph}
+\begin{frame}{FlipFlop Graph from Experiment 3}
     \begin{figure}
         \centering
         \includegraphics[height=0.7\textheight]{Images/Exp3_acc_prec_rec.png}
